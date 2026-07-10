@@ -149,3 +149,112 @@ nav{
 .card-content{
     padding:20px;
 }
+
+/* pricecard style */
+
+.pricing{
+    text-align: center;
+    padding: 80px 0;
+}
+.pricing h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.pricing-subtitle{
+    text-align: center; 
+    color: #575757;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.pricing-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px
+}
+.pricing-card{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #eae6e6;
+    border-radius: 10px;
+    padding:30px;
+    text-align:left;
+}
+.plan-name{
+   color: #575757;
+   font-size: 12px;
+   font-weight: 700;
+}
+.pricing-card h3{
+    font-size:52px;
+    font-weight:700;
+    margin-top:8px;
+}
+.pricing-card p{
+    color: #575757;
+    font-size:14px;
+}
+.pricing-card hr{
+    border:none;
+    border-top:1px solid #c1c0c0;
+    margin:18px 0;
+}
+.pro{
+    background:#0D1B2A;
+    color:white;
+}
+.feature{
+    margin-bottom: 20px;
+}
+.feature li{
+    margin-bottom:14px;
+    color:#333333;
+}
+.pro{
+    background:#0D1B2A;
+    color:white;
+}
+.pro p{
+    color:white;
+}
+.pro.plan-name{
+    color:#60A5FA;
+}
+.pro li{
+    color: #c8c8c8;
+}
+.pro hr{
+    border-top:1px solid rgb(107, 107, 107);
+}
+.btn-standard{
+    color: #2563EB;
+    margin: 20px;
+    border: 1px solid #2563EB;
+    padding: 18px 30px;
+    border-radius:8px;
+    font-size:15px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.btn-pro{
+    background-color: #2563EB;
+    color: #eae6e6;
+    margin: 20 px;
+    padding: 18px 30px;
+    border-radius:8px;
+    font-size:15px;
+    font-weight: bold;
+    cursor:pointer;  
+}
+.btn-team{
+    color: #2563EB;
+    margin: 20px;
+    border: 1px solid #2563EB;
+    padding: 18px 30px;
+    border-radius:8px;
+    font-size:15px;
+    font-weight: bold;
+    cursor:pointer;
+}
