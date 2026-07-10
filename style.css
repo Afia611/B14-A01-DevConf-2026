@@ -1,0 +1,151 @@
+/* Re-set style */
+*{
+    padding: 0; 
+    margin:0;
+    font-family: "Arimo", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration:none;
+    color:#333333;
+}
+
+ul{
+    list-style: none;
+}
+
+/* common style */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar style */
+header{
+    background-color: white;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 12px 0;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.logo img{
+    width: 150px;
+    display: block;
+}
+
+.nav-links{
+    display:flex;
+    justify-content: center;
+    gap: 50px;    
+}
+.nav-btn{
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor:pointer;
+}
+/* Hero style */
+.hero{
+    background-image: 
+    linear-gradient(
+        rgba(0,0,0.6),rgba(0,0,0,.6)
+        ),
+        url("./assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+.hero-content h1{
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+    margin: 20px;
+}
+.hero-content p{
+    color:white;
+    font-size:20px;
+    max-width:700px;
+    margin-bottom: 200px;
+    line-height:1.6;
+}
+.hero-btn{
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:18px 42px;
+    border-radius:8px;
+    font-size:20px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+/* Speakers Style */
+.speaker-box{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+}
+.speakers{
+    padding:80px 0;
+}
+.speakers h2{
+    text-align:center;
+    font-size:42px;
+    font-weight: 700;
+    margin-bottom:50px;
+}
+.speaker-card{
+    background:white;
+    border:1px solid #eae6e6;
+    border-radius:10px;
+    width: 100%;
+    overflow:hidden;
+    /* box-shadow: 0 0px 2px rgba(133, 131, 131, 0.6); */
+}
+.speaker-card img{
+    width:100%;
+    display:block;
+    height: 300px;
+    object-fit: cover;
+}
+.category{
+    color:#2563EB;
+    font-size:12px;
+    font-weight:700;
+}
+.speaker-card h3{
+    font-size:25px;
+    font-weight:700;
+    margin: 8px 0;
+}
+.speaker-card p{
+    color:#585757;
+    font-size:16px;
+}
+.card-content{
+    padding:20px;
+}
