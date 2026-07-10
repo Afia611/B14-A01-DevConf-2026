@@ -22,12 +22,12 @@ ul{
     margin: auto;
 }
 .common-btn{
-    background:blue;
+    background:#2563EB;
     color:white;
     border:none;
     padding:20px 35px;
     border-radius:8px;
-    font-size:16px;
+    font-size:20px;
     font-weight: bold;
     cursor:pointer;
 }
@@ -57,5 +57,40 @@ nav{
     display:flex;
     justify-content: center;
     gap: 50px;    
+}
+
+/* Hero style */
+.hero{
+    background-image: 
+    linear-gradient(
+        rgba(0,0,0.6),rgba(0,0,0,.6)
+        ),
+        url("assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+.hero-content h1{
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+    margin: 20px;
+}
+.hero-content p{
+    color:white;
+    font-size:20px;
+    max-width:700px;
+    margin-bottom: 200px;
+    line-height:1.6;
 }
 
