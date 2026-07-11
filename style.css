@@ -57,9 +57,12 @@ nav{
     font-weight: bold;
     cursor:pointer;
 }
-.nav-links:hover{
-    color:#2563EB;
+.nav-btn:hover{
+    background-color: white;
+    border: 1px solid #2563EB;
+    color: #2563EB;
 }
+
 /* Hero style */
 .hero{
     background-image: 
@@ -99,12 +102,17 @@ nav{
     background:#2563EB;
     color:white;
     border:none;
-    padding:18px 35px;
+    padding:15px 38px;
     border-radius:8px;
     font-size:18px;
     font-weight: bold;
     cursor:pointer;
 }
+.hero-btn:hover{
+    background-color: white;
+    color: #2563EB;
+}
+
 
 /* Speakers Style */
 .speaker-box{
@@ -307,6 +315,7 @@ nav{
     padding: 35px 25px;
     transition: 0.3s;
 }
+
 .challenge-icon{
     font-size: 48px;
     margin-bottom: 20px;
@@ -356,6 +365,7 @@ footer{
 .footer-logo img{
     height:35px;
 }
+
 .social-links{
     display:flex;
     align-items: center;
