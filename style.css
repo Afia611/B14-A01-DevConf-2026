@@ -2,19 +2,17 @@
 *{
     padding: 0; 
     margin:0;
-    font-family: "Arimo", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 img{
     max-width: 100%;
+    display:block;
 }
 a{
     text-decoration:none;
     color:#333333;
 }
 
-ul{
-    list-style: none;
-}
 
 /* common style */
 .container{
@@ -46,6 +44,7 @@ nav{
 .nav-links{
     display:flex;
     justify-content: center;
+    list-style: none;
     gap: 50px;    
 }
 .nav-btn{
@@ -58,6 +57,9 @@ nav{
     font-weight: bold;
     cursor:pointer;
 }
+.nav-links:hover{
+    color:#2563EB;
+}
 /* Hero style */
 .hero{
     background-image: 
@@ -67,7 +69,7 @@ nav{
         url("./assets/banner.jpg");
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height:90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,24 +83,25 @@ nav{
 }
 .hero-content h1{
     font-size: 80px;
+    line-height: 1.1;
     color: white;
-    font-weight: 700;
+    font-weight: 800;
     margin: 20px;
 }
 .hero-content p{
     color:white;
     font-size:20px;
     max-width:700px;
-    margin-bottom: 200px;
     line-height:1.6;
+    margin-bottom: 200px;
 }
 .hero-btn{
     background:#2563EB;
     color:white;
     border:none;
-    padding:18px 42px;
+    padding:18px 35px;
     border-radius:8px;
-    font-size:20px;
+    font-size:18px;
     font-weight: bold;
     cursor:pointer;
 }
@@ -110,7 +113,7 @@ nav{
     gap: 18px;
 }
 .speakers{
-    padding:80px 0;
+    padding:100px 0;
 }
 .speakers h2{
     text-align:center;
@@ -124,7 +127,8 @@ nav{
     border-radius:10px;
     width: 100%;
     overflow:hidden;
-    /* box-shadow: 0 0px 2px rgba(133, 131, 131, 0.6); */
+    padding: 20px;
+    box-shadow: 0 1px 8px (15,23,42,.05);
 }
 .speaker-card img{
     width:100%;
@@ -154,7 +158,7 @@ nav{
 
 .pricing{
     text-align: center;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 .pricing h2{
     text-align: center;
@@ -172,7 +176,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: stretch;
-    gap: 20px
+    gap: 18px
 }
 .pricing-card{
     display: flex;
@@ -182,6 +186,7 @@ nav{
     border-radius: 10px;
     padding:30px;
     text-align:left;
+    
 }
 .plan-name{
    color: #575757;
@@ -203,12 +208,15 @@ nav{
     border-top:1px solid #c1c0c0;
     margin:18px 0;
 }
-.feature{
-    margin-bottom: 20px;
+.features{
+    margin-bottom: 16px;
+}
+.features li::marker{
+    color: #2563EB;
 }
 
-.feature li{
-    margin-bottom:14px;
+.features li{
+    margin-bottom:20px;
     color:#333333;
 }
 .pro{
@@ -231,42 +239,122 @@ nav{
     color: #2563EB;
     border: 1px solid #2563EB;
 }
+.btn-standard:hover{
+    background: #2563EB;
+    color: white;
+}
 .btn-pro{
     background-color: #2563EB;
     color: #eae6e6;
     border:none;
 }
+.btn-pro:hover{
+    background-color: white;
+    color: #2563EB;
+}
 .btn-team{
     color: #0D1B2A;
     border: 1px solid #0D1B2A;
 }
+.btn-team:hover{
+    background: #2563EB;
+    color: white;
+}
 .plan-btn{
     width:100%;
     margin-top:auto;
-    padding:18px 10px;
+    padding:18px;
     border-radius:8px;
     font-size:15px;
     font-weight:bold;
     cursor: pointer;
 }
 
-
+ /* placeholder style */
+ .challenge{
+    padding: 100px 0;
+    background-color: #F8FAFC;
+    text-align: center;
+}
+.challenge h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 12px;
+}
+.challenge-subtitle{
+    font-size: 18px;
+    color: #2563EB;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+.challenge-description{
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #64748B;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.challenge-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.challenge-card{
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 35px 25px;
+    transition: 0.3s;
+}
+.challenge-icon{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.challenge-card h3{
+    font-size: 24px;
+    color: #0F172A;
+    margin-bottom: 15px;
+}
+.challenge-card p{
+    color: #64748B;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.challenge-btn{
+    width: 100%;
+    padding: 15px;
+    background: white;
+    border: 2px solid #2563EB;
+    border-radius: 8px;
+    color: #2563EB;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.challenge-btn:hover{
+    background: #2563EB;
+    color: white;
+}
 
 /* footer style */
 footer{
     background-color:#0D1B2A;
     background-size: cover;
     background-position: center;
-    color: #333333;
+    justify-content: space-between;
+    color: #b2b2b2;
+    padding: 18px 0;
 }
 .footer-top{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 .footer-logo img{
-    height:40px;
+    height:35px;
 }
 .social-links{
     display:flex;
@@ -274,13 +362,13 @@ footer{
     gap:20px;
 }
 .social-links img{
-    width:28px;
+    width:30px;
     height:28px;
 }
-.footer hr{
+footer hr{
     border:none;
-    border-top:0.5px solid #575757;
-    margin:30px 0;
+    border-top:0.5px solid #bdbdbd;
+    margin:10px 0;
 }
 .footer-bottom{
     display:flex;
@@ -288,8 +376,10 @@ footer{
     align-items:center;
 }
 .copyright{
-    color: #575757;
+    color: #767474;
     font-size:14px;
+    margin:0;
+    padding-top: 15px;
 }
 .footer-links{
     display:flex;
@@ -297,6 +387,6 @@ footer{
 }
 .footer-links a{
     text-decoration:none;
-    color:#575757;
+    color:#767474;
     font-size:14px;
 }
