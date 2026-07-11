@@ -1,0 +1,1 @@
+before footer there will be another section that i have ideated.It will be a Dev Challenge Arena.it will be a PLACEHOLDER SECTION with a subtitle 'push your coding skills to the limits'. it must stay relevant to the DevConf 2026 theme. i want it to be thematically and visually fitting yet a unique and relevant section. Guide me to code.

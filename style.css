@@ -206,6 +206,7 @@ nav{
 .feature{
     margin-bottom: 20px;
 }
+
 .feature li{
     margin-bottom:14px;
     color:#333333;
@@ -233,6 +234,7 @@ nav{
 .btn-pro{
     background-color: #2563EB;
     color: #eae6e6;
+    border:none;
 }
 .btn-team{
     color: #0D1B2A;
@@ -277,7 +279,7 @@ footer{
 }
 .footer hr{
     border:none;
-    border-top:0.5px solid #b3b3b3;
+    border-top:0.5px solid #575757;
     margin:30px 0;
 }
 .footer-bottom{
@@ -286,7 +288,7 @@ footer{
     align-items:center;
 }
 .copyright{
-    color: #575757;;
+    color: #575757;
     font-size:14px;
 }
 .footer-links{
@@ -297,5 +299,4 @@ footer{
     text-decoration:none;
     color:#575757;
     font-size:14px;
-    hover{color:#c1c0c0;}
 }
